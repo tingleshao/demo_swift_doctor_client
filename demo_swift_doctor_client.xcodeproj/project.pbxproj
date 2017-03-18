@@ -15,6 +15,10 @@
 		D767A86B1E7DAF750040AC82 /* demo_swift_doctor_clientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767A86A1E7DAF750040AC82 /* demo_swift_doctor_clientTests.swift */; };
 		D767A8761E7DAF750040AC82 /* demo_swift_doctor_clientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767A8751E7DAF750040AC82 /* demo_swift_doctor_clientUITests.swift */; };
 		D767A8841E7DC13F0040AC82 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767A8831E7DC13F0040AC82 /* LoginViewController.swift */; };
+		D767A8871E7DCAC20040AC82 /* GlobalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767A8861E7DCAC20040AC82 /* GlobalClass.swift */; };
+		D767A8891E7DCAE80040AC82 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767A8881E7DCAE80040AC82 /* User.swift */; };
+		D767A88B1E7DCB040040AC82 /* ChatMate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767A88A1E7DCB040040AC82 /* ChatMate.swift */; };
+		D767A88D1E7DCB1E0040AC82 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D767A88C1E7DCB1E0040AC82 /* ChatMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		D767A8751E7DAF750040AC82 /* demo_swift_doctor_clientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_swift_doctor_clientUITests.swift; sourceTree = "<group>"; };
 		D767A8771E7DAF750040AC82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D767A8831E7DC13F0040AC82 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D767A8861E7DCAC20040AC82 /* GlobalClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalClass.swift; sourceTree = "<group>"; };
+		D767A8881E7DCAE80040AC82 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D767A88A1E7DCB040040AC82 /* ChatMate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMate.swift; sourceTree = "<group>"; };
+		D767A88C1E7DCB1E0040AC82 /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 				D767A8571E7DAF750040AC82 /* ViewController.swift */,
 				D767A8591E7DAF750040AC82 /* Main.storyboard */,
 				D767A8831E7DC13F0040AC82 /* LoginViewController.swift */,
+				D767A8851E7DCAA50040AC82 /* Model */,
 				D767A85C1E7DAF750040AC82 /* Assets.xcassets */,
 				D767A85E1E7DAF750040AC82 /* LaunchScreen.storyboard */,
 				D767A8611E7DAF750040AC82 /* Info.plist */,
@@ -126,6 +135,17 @@
 				D767A8771E7DAF750040AC82 /* Info.plist */,
 			);
 			path = demo_swift_doctor_clientUITests;
+			sourceTree = "<group>";
+		};
+		D767A8851E7DCAA50040AC82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D767A8861E7DCAC20040AC82 /* GlobalClass.swift */,
+				D767A8881E7DCAE80040AC82 /* User.swift */,
+				D767A88A1E7DCB040040AC82 /* ChatMate.swift */,
+				D767A88C1E7DCB1E0040AC82 /* ChatMessage.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D767A88D1E7DCB1E0040AC82 /* ChatMessage.swift in Sources */,
+				D767A88B1E7DCB040040AC82 /* ChatMate.swift in Sources */,
 				D767A8841E7DC13F0040AC82 /* LoginViewController.swift in Sources */,
 				D767A8581E7DAF750040AC82 /* ViewController.swift in Sources */,
 				D767A8561E7DAF750040AC82 /* AppDelegate.swift in Sources */,
+				D767A8891E7DCAE80040AC82 /* User.swift in Sources */,
+				D767A8871E7DCAC20040AC82 /* GlobalClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
