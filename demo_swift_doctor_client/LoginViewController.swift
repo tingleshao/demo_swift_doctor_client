@@ -26,13 +26,40 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.logImageView.image = UIImage(named: "loginImg.jpg")
+        addBorderToTextField(self.usernameField)
+        addBorderToTextField(self.passwordField)
+        self.rememberPsswdButton.setImage(UIImage(named: "UNCHECKED.jpg"), for: UIControlState())
+        self.rememberPsswdButton.setImage(UIImage(named: "CHECKED.jpg"), for: UIControlState.selected)
+        self.rememberPsswdLabel.textColor = colorBlue
+        self.forgetPsswdButton.tintColor = colorBlue
+        self.loginButton.setTitleColor(UIColor.white, for: UIControlState())
+        loginButton.backgroundColor = colorBlue
+        self.registerButton.setTitleColor(UIColor.white, for: UIControlState())
+        registerButton.backgroundColor = colorGreen
+        
+        usernameField.delegate = self
+        passwordField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //登录密码按键
+    @IBAction func loginButton_tapped(_ sender: AnyObject) {
+        let usernameStr: String? = usernameField.text
+        //        if (usernameStr!.isEmpty) {
+        //            displayMyAlertMessage("不能为空！")
+        //            return
+        //        }
+        
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "UserDidLoginNotification"), object: nil, userInfo: ["username" : usernameStr!])
+        
+        self.performSegue(withIdentifier: "goto_main", sender: sender)
+    }
+
     
 
     /*
